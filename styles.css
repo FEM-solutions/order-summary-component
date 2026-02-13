@@ -191,11 +191,19 @@ body {
   color: var(--blue-950);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .plan-link,
+  .pay-btn,
+  .cancel-btn {
+    transition-duration: 0.01ms;
+  }
+}
+
 /*-------------------------- *\
   #LAYOUT 
 \*---------------------------*/
 
-.container {
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -215,15 +223,7 @@ body {
 \*---------------------------*/
 
 @media (min-width: 48rem) {
-  .container {
+  .main {
     background-image: url("./images/pattern-background-desktop.svg");
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .plan-link,
-  .pay-btn,
-  .cancel-btn {
-    transition-duration: 0.01ms;
   }
 }
