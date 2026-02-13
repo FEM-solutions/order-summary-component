@@ -195,6 +195,7 @@ body {
 
 @media (prefers-reduced-motion: reduce) {
   .plan-link,
+  .btn,
   .pay-btn,
   .cancel-btn {
     transition-duration: 0.01ms;
