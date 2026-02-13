@@ -6,9 +6,11 @@
 * CARD
 * PLAN
 * BUTTONS
+* ATTRIBUTION 
 * LAYOUT
 * MEDIA-QUERIES
-*/
+*
+**/
 
 /*-------------------------- *\
   #RESET 
@@ -199,6 +201,34 @@ body {
   }
 }
 
+/*--------------------------*\
+  #ATTRIBUTION 
+\*--------------------------*/
+
+.attribution {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-medium);
+  color: var(--grey-950);
+}
+
+.attribution__link {
+  text-decoration: none;
+  color: var(--grey-950);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.attribution__link:hover,
+.attribution__link:focus-visible {
+  color: var(--blue-700);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .attribution__link {
+    transition-duration: 0.01ms;
+  }
+}
+
 /*-------------------------- *\
   #LAYOUT 
 \*---------------------------*/
@@ -216,6 +246,13 @@ body {
   background-image: url("./images/pattern-background-mobile.svg");
   background-repeat: no-repeat;
   background-size: 100% 50%;
+}
+
+.footer {
+  padding: var(--spacing-100);
+
+  text-align: center;
+  background-color: var(--blue-100);
 }
 
 /*-------------------------- *\
